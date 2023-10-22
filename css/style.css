@@ -565,23 +565,48 @@ body {
 }
 
 
+
 @media screen and (max-width: 650px) {
     /* Mobile-first styles (applies to all screen sizes) */
 
+
+
     .container {
+        margin: auto;
         width: 100%;
+        padding: 0 5px;
+        /* Fixed typo: changed , to space */
+        overflow-x: hidden;
     }
 
-    .menu__list {
-        visibility: hidden;
+
+    /* Header inner container */
+    .header__inner {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: -45px;
+        padding-left: 0px;
     }
 
+
+    /* Menu items for other links */
     .menu__item {
-        visibility: hidden;
+        color: #DDD;
+        text-align: right;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
     }
 
     .main__text {
-        visibility: hidden;
+        display: none;
     }
 
     .title__1,
@@ -593,20 +618,20 @@ body {
         visibility: visible;
         color: rgba(255, 255, 255, 0.80);
         font-family: Gayo Wine Demo;
-        font-size: 50px;
+        font-size: 48px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         text-transform: uppercase;
-        margin: 0;
-        margin-left: 20px;
+        margin: auto;
+        width: 355px;
     }
 
     .first__screen__text {
-        margin: 0;
-        padding-top: 180px;
-        width: 375px;
-        margin-left: 20px;
+        margin: auto;
+        padding-top: 200px;
+        width: 355px;
+        text-align: center;
     }
 
     .basic__text {
@@ -617,7 +642,8 @@ body {
         font-weight: 400;
         line-height: 24px;
         text-transform: uppercase;
-        margin: 0;
+        margin: auto;
+        width: 355px;
     }
 
     .about__me__marquee {
@@ -636,12 +662,10 @@ body {
     }
 
     .about__me__column__1,
-    .about__me__column__3,
     .about__me__menu {
-        width: 375px;
-        margin-left: 20px;
-        margin: 0;
-        padding: 0;
+        width: 355px;
+        text-align: center;
+        margin: auto;
     }
 
     .about__me__text__1,
@@ -654,7 +678,8 @@ body {
         font-weight: 400;
         line-height: 140%;
         text-transform: uppercase;
-        margin: 0;
+        margin: auto;
+        width: 355px;
     }
 
     .about__me__text__1 {
@@ -676,32 +701,36 @@ body {
     }
 
     .photo {
-        width: 375px;
+        width: 355px;
         height: auto;
-        margin-left: 20px;
         flex-grow: 1;
         order: 4;
+        display: block;
+        margin: auto;
+        overflow-x: hidden;
     }
 
     .about__me__menu {
-        margin-top: -30px;
         display: flex;
-        width: 375px;
+        width: 355px;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
+        margin-top: -50px;
+        margin-left: auto;
+        margin-right: auto;
         padding-bottom: 20px;
         flex-grow: 1;
         order: 5;
     }
 
     .recent__work {
-        margin: 0;
+        margin: auto;
         width: 100%;
         align-content: center;
     }
 
     .recent__work__title {
-        margin: 0;
+        margin: auto;
         padding-top: 50px;
         text-align: center;
     }
@@ -715,8 +744,11 @@ body {
         font-weight: 400;
         line-height: normal;
         text-transform: uppercase;
-        margin: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         padding-bottom: 5px;
+        width: 355px;
     }
 
     .recent__work__subtitle {
@@ -728,21 +760,24 @@ body {
         font-weight: 400;
         line-height: 24px;
         text-transform: uppercase;
-        margin: 0;
+        margin: auto;
         padding-bottom: 40px;
+        width: 355px;
     }
 
     .work {
-        width: 100%;
-        margin: 0;
+        width: 355px;
+        margin: auto;
         padding-bottom: 30px;
     }
 
     .photo__work {
-        width: 375px;
+        width: 355px;
         height: auto;
         align-items: center;
-        margin-left: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         padding-bottom: 0;
     }
 
@@ -754,9 +789,7 @@ body {
         font-weight: 400;
         line-height: normal;
         text-transform: uppercase;
-        margin: 0;
         padding-top: 10px;
-        margin-left: 10px;
     }
 
     .work__subtitle {
@@ -767,29 +800,27 @@ body {
         font-weight: 400;
         line-height: normal;
         text-transform: uppercase;
-        margin: 0;
         padding-top: 6px;
-        margin-left: 10px;
     }
 
     .skills {
         width: 100%;
         padding-top: 20px;
-        min-width: 395px;
-        max-width: 395px;
         overflow: hidden;
+        margin: auto;
+        overflow-x: hidden;
     }
 
     .skills__title {
-        margin: 0;
-        width: 375px;
+        margin: auto;
+        width: 355px;
         flex-direction: column;
         display: flex;
         padding-bottom: 40px;
     }
 
     .skills__title__text__1 {
-        margin: 0;
+        margin: auto;
         color: #FFF;
         text-align: center;
         font-family: Roboto;
@@ -800,6 +831,7 @@ body {
         text-transform: uppercase;
         flex-grow: 1;
         order: 1;
+        text-align: center;
     }
 
     .skills__title__text__2 {
@@ -807,7 +839,7 @@ body {
     }
 
     .skills__title__text__3 {
-        margin: 0;
+        margin: auto;
         color: #FFF;
         text-align: center;
         font-family: Roboto;
@@ -819,11 +851,12 @@ body {
         flex-grow: 1;
         order: 2;
         padding-bottom: 0;
+        text-align: center;
     }
 
     .skills__block {
-        margin: 0;
-        width: 375px;
+        margin: auto;
+        width: 355px;
         flex-direction: column;
         display: flex;
         padding: 0;
@@ -838,9 +871,9 @@ body {
         font-weight: 400;
         line-height: normal;
         text-transform: uppercase;
-        margin: 0;
+        margin: auto;
         padding-bottom: 15px;
-        margin-left: 10px;
+        width: 355px;
     }
 
     .skills__text__subtitle {
@@ -851,9 +884,9 @@ body {
         font-weight: 400;
         line-height: 140%;
         text-transform: uppercase;
-        margin: 0;
-        margin-left: 10px;
-        width: 375px;
+        margin: auto;
+        width: 355px;
+        margin-left: 0px;
         padding-bottom: 30px;
     }
 
@@ -862,8 +895,8 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        margin: 0;
-        margin-left: 10px;
+        margin: auto;
+        width: 355px;
         padding: 0;
     }
 
@@ -886,7 +919,8 @@ body {
         font-weight: 400;
         line-height: normal;
         text-transform: uppercase;
-        margin-left: 10px;
+        margin: auto;
+        margin-left: 0px;
         padding-bottom: 15px;
         padding-top: 30px;
     }
@@ -896,25 +930,25 @@ body {
         background: #DDD;
         position: absolute;
         width: 100%;
-        height: 800px;
+        height: 600px;
         margin-top: 100px;
     }
 
     .rectangle__top__block {
-        margin: 0;
         width: 100%;
         flex-direction: column;
         display: flex;
         justify-content: space-between;
         align-items: start;
         position: sticky;
-        margin: 0;
         padding-top: 80px;
-        margin: 0;
+        margin: auto;
     }
 
     .rectangle__title__block {
-        margin: 0;
+        margin: auto;
+        width: 355px;
+        align-items: center;
     }
 
     .rectangle__title {
@@ -924,15 +958,15 @@ body {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        margin: 0;
-        padding: 0;
-        margin-left: 10px;
+        margin: auto;
     }
 
     .rectangle__list {
+        width: 355px;
         padding-top: 70px;
         align-items: end;
-        margin-left: 250px;
+        text-align: end;
+        padding-bottom: 210px;
     }
 
     .rectangle__marquee {
@@ -943,7 +977,9 @@ body {
         font-weight: 400;
         line-height: normal;
         text-transform: uppercase;
+        margin: auto;
     }
+}
 
 
 
