@@ -569,21 +569,6 @@ body {
 @media screen and (max-width: 650px) {
     /* Mobile-first styles (applies to all screen sizes) */
 
- /* Video background section */
-    .video__bg {
-        height: 900px;
-    }
-
-    /* Video element */
-    .video__bg video {
-        height: 900px;
-    }
-
-    /* Effects overlay */
-    .effects {
-        height: 900px;
-    }
-
     .container {
         margin: auto;
         width: 100%;
