@@ -571,17 +571,17 @@ body {
 
  /* Video background section */
     .video__bg {
-        height: 800px;
+        height: 900px;
     }
 
     /* Video element */
     .video__bg video {
-        height: 800px;
+        height: 900px;
     }
 
     /* Effects overlay */
     .effects {
-        height: 800px;
+        height: 900px;
     }
 
     .container {
@@ -642,7 +642,7 @@ body {
 
     .first__screen__text {
         margin: auto;
-        padding-top: 200px;
+        padding-top: 180px;
         width: 355px;
         text-align: center;
     }
